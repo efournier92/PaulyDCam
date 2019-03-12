@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/PaulyDCam",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
