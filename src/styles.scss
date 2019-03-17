@@ -1,9 +1,19 @@
-html {
-  background-color: #2d2d2d;
-}
+@import '~@angular/material/theming';
 
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: #2d2d2d !important;
+@include mat-core();
+
+$pauly-theme-primary: mat-palette($mat-grey, 700);
+$pauly-theme-accent: mat-palette($mat-green, 500);
+$pauly-theme-warn: mat-palette($mat-green, A400);
+
+$pauly-theme: mat-dark-theme(
+  $pauly-theme-primary,
+  $pauly-theme-accent,
+  $pauly-theme-warn,
+);
+
+html, body {
+  @include angular-material-theme($pauly-theme);
+  margin: 0;
+  height: 100%;
 }

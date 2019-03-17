@@ -1,0 +1,49 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.stream-container {
+  height: 92%;
+  background-color: #0f0e11;
+}
+
+.stream-video {
+  width: 96%;
+  height: 96%;
+  max-height: 86vh;
+  margin: 1em auto;
+}
+
+.stream-chat {
+  height: 98%;
+}
+
+.sixteen-nine {
+  position: relative;
+}
+.sixteen-nine:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 62.5%;
+}
+.sixteen-nine > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
