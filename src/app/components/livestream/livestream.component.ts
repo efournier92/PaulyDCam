@@ -8,27 +8,11 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class LivestreamComponent {
   shouldShowSidenav: boolean = false;
 
-  constructor() {
-    window.addEventListener("resize", () => {
-      this.waitToShowSidenav(0.5);
-    })
-  }
+  constructor() { }
 
-  ngOnInit() {
-    this.waitToShowSidenav(2);
-  }
+  ngOnInit() { }
 
   toggleSidenav() {
     this.shouldShowSidenav = !this.shouldShowSidenav;
-  }
-
-  waitToShowSidenav(seconds: number) {
-    setTimeout(() => {
-      if (window.innerWidth > 620) {
-        this.shouldShowSidenav = true;
-      } else {
-        this.shouldShowSidenav = false;
-      }
-    }, (seconds * 1000));
   }
 }
