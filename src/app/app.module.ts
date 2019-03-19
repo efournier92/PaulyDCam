@@ -11,6 +11,7 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatSidenavModule,
+  MatChipsModule,
 } from '@angular/material';
 
 @NgModule({
@@ -27,6 +28,7 @@ import {
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

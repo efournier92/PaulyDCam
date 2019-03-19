@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  isSidenavVisible: boolean = false;
+  shouldShowSidenav: boolean = false;
 
   constructor() {
     window.addEventListener("resize", () => {
@@ -19,15 +19,15 @@ export class AppComponent implements OnInit {
   }
 
   toggleSidenav() {
-    this.isSidenavVisible = !this.isSidenavVisible;
+    this.shouldShowSidenav = !this.shouldShowSidenav;
   }
 
   waitToShowSidenav(seconds: number) {
     setTimeout(() => {
       if (window.innerWidth > 620) {
-        this.isSidenavVisible = true;
+        this.shouldShowSidenav = true;
       } else {
-        this.isSidenavVisible = false;
+        this.shouldShowSidenav = false;
       }
     }, (seconds * 1000));
   }
