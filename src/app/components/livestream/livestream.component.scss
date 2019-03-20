@@ -8,13 +8,13 @@
 }
 
 .stream-container {
-  height: 92%;
+  height: 90%;
   background-color: #0f0e11;
 }
 
 .stream-video {
-  width: 96%;
-  height: 96%;
+  width: 94%;
+  height: 94%;
   max-height: 86vh;
   margin: 1em auto;
 }
@@ -33,4 +33,8 @@
 
 .enabled-element {
   background-color:#c62828 !important;
+}
+
+.sidnav-content {
+  overflow: hidden;
 }
