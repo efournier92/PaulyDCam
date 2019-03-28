@@ -3,16 +3,8 @@
     <div class="d-flex justify-content-start mr-4">
       <img src="../assets/img/logo/PaulyDCam_Icon.png" height="45">
     </div>
-    <!-- <mat-chip-list>
-      <mat-chip (click)="toggleSidenav()" style="background-color:#c62828;">
-        <mat-icon style="margin-right:2px;">photo_camera</mat-icon> Take Photo
-      </mat-chip>
-    </mat-chip-list> -->
     <div class="spacer"></div>
     <mat-chip-list>
-      <!-- <mat-chip class="disabled-element" (click)="toggleSidenav()">
-        <mat-icon class="m-1">photo_library</mat-icon><span class="m-1">Photos</span>
-      </mat-chip> -->
       <mat-chip (click)="toggleSidenav()" [ngClass]="shouldShowSidenav ? 'enabled-element' : 'disabled-element'">
         <mat-icon class="m-1">chat</mat-icon><span class="m-1">Chat</span>
       </mat-chip>
